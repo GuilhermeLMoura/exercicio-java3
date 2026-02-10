@@ -1,6 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/TA2DXSll)
-<center><h1>Avaliação Continuada 3</h1></center>
-
 ## ⚠️ Aviso Importante: Por favor, leia as instruções abaixo com cuidado antes de iniciar a prova. ⚠️
 
 ## Confirme se o seu código foi devidamente enviado para o repositório remoto.
