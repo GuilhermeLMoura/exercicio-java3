@@ -1,0 +1,294 @@
+{
+  "tests": [
+    {
+      "name": "Deve salvar um curso com sucesso - CursoSaveTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.CursoControllerTest\\$CursoSaveTeste\\#testSaveCurso",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve retornar erro ao tentar salvar um curso sem nome - CursoSaveTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.CursoControllerTest\\$CursoSaveTeste\\#testSaveCursoSemNome",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve retornar erro ao tentar salvar um curso sem descrição - CursoSaveTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.CursoControllerTest\\$CursoSaveTeste\\#testSaveCursoSemDescricao",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve retornar erro ao tentar salvar um curso sem carga horária - CursoSaveTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.CursoControllerTest\\$CursoSaveTeste\\#testSaveCursoSemCargaHoraria",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve retornar erro ao tentar salvar um curso com carga horária menor que 1 - CursoSaveTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.CursoControllerTest\\$CursoSaveTeste\\#testSaveCursoCargaHorariaMenorQue1",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve retornar erro ao tentar salvar um curso com carga horária negativa - CursoSaveTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.CursoControllerTest\\$CursoSaveTeste\\#testSaveCursoCargaHorariaNegativa",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve retornar erro ao tentar salvar um curso com nome já utilizado - CursoSaveTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.CursoControllerTest\\$CursoSaveTeste\\#testSaveCursoNomeJaUtilizado",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve listar todos os cursos - CursoFindAllTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.CursoControllerTest\\$CursoFindAllTeste\\#testFindAllCursos",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve retornar 204 quando não houver cursos - CursoFindAllTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.CursoControllerTest\\$CursoFindAllTeste\\#testFindAllCursosVazio",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve buscar um curso por id - CursoFindByIdTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.CursoControllerTest\\$CursoFindByIdTeste\\#testFindCursoById",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve retornar 404 ao buscar um curso inexistente - CursoFindByIdTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.CursoControllerTest\\$CursoFindByIdTeste\\#testFindCursoByIdInexistente",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve salvar uma inscrição com sucesso - InscricaoSaveTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.InscricaoControllerTest\\$InscricaoSaveTeste\\#testSaveInscricao",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve salvar uma inscrição com sucesso caso tenha exatamente 18 anos - InscricaoSaveTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.InscricaoControllerTest\\$InscricaoSaveTeste\\#testSaveInscricaoCom18Anos",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve retornar erro ao tentar salvar uma inscrição sem nome - InscricaoSaveTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.InscricaoControllerTest\\$InscricaoSaveTeste\\#testSaveInscricaoSemNome",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve retornar erro ao tentar salvar uma inscrição sem email - InscricaoSaveTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.InscricaoControllerTest\\$InscricaoSaveTeste\\#testSaveInscricaoSemEmail",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve retornar erro ao tentar salvar uma inscrição sem data de nascimento - InscricaoSaveTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.InscricaoControllerTest\\$InscricaoSaveTeste\\#testSaveInscricaoSemDataNascimento",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve retornar erro ao tentar salvar uma inscrição sem data de inscrição - InscricaoSaveTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.InscricaoControllerTest\\$InscricaoSaveTeste\\#testSaveInscricaoSemDataInscricao",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve retornar erro ao tentar salvar uma inscrição com email inválido - InscricaoSaveTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.InscricaoControllerTest\\$InscricaoSaveTeste\\#testSaveInscricaoEmailInvalido",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve retornar erro ao tentar salvar uma inscrição com data de nascimento atual - InscricaoSaveTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.InscricaoControllerTest\\$InscricaoSaveTeste\\#testSaveInscricaoDataNascimentoFutura",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve retornar erro ao tentar salvar uma inscrição caso tenha 17 anos ou menos - InscricaoSaveTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.InscricaoControllerTest\\$InscricaoSaveTeste\\#testSaveInscricaoMenorDeIdade",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve retornar erro ao tentar salvar com valores vazios - InscricaoSaveTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.InscricaoControllerTest\\$InscricaoSaveTeste\\#testSaveInscricaoComValoresVazios",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve retornar erro ao tentar salvar uma inscrição com valores nulos - InscricaoSaveTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.InscricaoControllerTest\\$InscricaoSaveTeste\\#testSaveInscricaoComValoresNulos",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve retornar erro ao tentar salvar uma inscrição com valores em branco - InscricaoSaveTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.InscricaoControllerTest\\$InscricaoSaveTeste\\#testSaveInscricaoComValoresEmBranco",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve listar todas as inscrições - InscricaoListTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.InscricaoControllerTest\\$InscricaoListTeste\\#testListInscricoes",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve retornar 204 quando não houver inscrições - InscricaoListTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.InscricaoControllerTest\\$InscricaoListTeste\\#testListInscricoesVazio",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve buscar uma inscrição por id - InscricaoFindByIdTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.InscricaoControllerTest\\$InscricaoFindByIdTeste\\#testFindInscricaoById",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve retornar 404 quando a inscrição não for encontrada - InscricaoFindByIdTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.InscricaoControllerTest\\$InscricaoFindByIdTeste\\#testFindInscricaoByIdNotFound",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve deletar uma inscrição por id - InscricaoDeleteTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.InscricaoControllerTest\\$InscricaoDeleteTeste\\#testDeleteInscricaoById",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    },
+    {
+      "name": "Deve retornar 404 quando a inscrição não for encontrada - InscricaoDeleteTeste",
+      "setup": "",
+      "run": "mvn test -DargLine=\"-Dfile.encoding=UTF-8\" -Dtest=school.sptech.cursos.controller.InscricaoControllerTest\\$InscricaoDeleteTeste\\#testDeleteInscricaoByIdNotFound",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "points": 1,
+      "timeout_ms": 600000
+    }
+  ]
+}
